@@ -495,3 +495,41 @@ export default function Dashboard() {
     </>
   );
 }
+
+{/*#Use this dashboard.jsx as a UI, keep the layout but not the content. We want to specify the content for our usecase. We are building a complete mission control. We want to have full control of what is happening across our entire system. 
+
+To the right, add event logs, anything that is happening of importance we want to show here,
+Journey, important milestones that we keep track of overtime to see our progress, this is different from event log,
+Search, use cmd+k react component, https://github.com/dip/cmdk,
+For all drawers (modals) use vaul by emil kowalski, max width 1200px https://vaul.emilkowal.ski/,
+For notifications use toast notifications by emil kowalski (sonner) https://sonner.emilkowal.ski/,
+We want to be able to search across all systems, and then pinpoint the search words, implement the search with clawvault QMD search etc and make it smart, so if we write "secret" or "private" it understands they mean the same thing, a smart search,
+When we click a search item, navigate to it and highlight the thing we searched for,
+We want a file tab, upload files, see files, show previews, add remove etc,
+Memory, we want to be able to navigate and see all our memories,
+Tasks, our kanban board, I can also add tasks here,
+System, shows system health,
+Heartbeat, just shows whats in our heartbeat,
+
+can we add auto reload to our mission control, so when we upload files, they show up without us reloading the page. And can we add the
+ feature to add folders so we can have some structure, and we want to be able to navigate in and out of folders etc, we can open a folder in a
+ vaul drawer maybe?
+
+
+ Done. Here's what's new on the Files page:
+
+ 
+Auto-reload — polls every 3s, uploads appear instantly without refresh,
+Clipboard paste — Ctrl+V pastes images directly (auto-named paste-{timestamp}.png),
+Folders — "New Folder" button, creates subfolders in current directory,
+Breadcrumb navigation — Files / subfolder / subfolder with clickable path segments,
+Back button — appears when inside a folder,
+Folder cards — shows item count, click to enter, folders listed before files,
+Uploads go to current folder — if you're inside a folder, uploads land there,
+
+ Give it a refresh at localhost:8888 → Files page.
+
+
+ Can we add a feature to drag and drop files into folders, and also multi-select files to either remove or mass-delete (open a bottom UI bar
+ with a delete button)
+*/}
